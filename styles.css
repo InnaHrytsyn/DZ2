@@ -1,0 +1,92 @@
+/* Basic colors */
+/* main-text-color: #212121
+second-text-color: #FFFFFF
+accent: #2196F3  */
+
+:root{
+--main-text-color: #212121;
+--second-text-color: #757575; 
+--white-text-color: #FFFFFF;
+--footer-text-accent: rgba(255, 255, 255, 0.6);
+--accent: #2196F3;
+--bg-main: #F5F4FA;
+--bg-accent: #2F303A;
+--portfolio-nav: ##F5F4FA;
+}
+
+
+body{
+    background-color: var(--bg-main);
+    color: var(--main-text-color);
+}
+
+.header .logo{
+    color: var(--main-text-color);
+    text-decoration: none;
+
+}
+.logo-web{
+    color: var(--accent);
+}
+
+.header-nav{
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+.header-nav:hover, 
+.header-nav:focus{
+    color: var(--accent);
+}
+
+.header-mail, 
+.header-tel {
+    text-decoration: none;
+    color: var(--second-text-color)
+}
+
+.header-mail:hover,
+.header-tel:hover,
+.header-mail:focus,
+.header-tel:focus{
+    color: var(--accent);
+}
+.hero{
+    background-color: var(--bg-accent);
+    color: var(--white-text-color);
+}
+.hero-button{
+    background-color: var(--accent);
+    color: var(--white-text-color);
+}
+.advantages, .team-duty{
+    color: var(--second-text-color);
+}
+.footer{
+    background-color: var(--bg-accent);
+}
+
+.footer-maps{
+    color: var(--white-text-color);
+    text-decoration: none;
+}
+.footer-mail, .footer-tel{
+    color: var(--footer-text-accent);
+    text-decoration: none;
+}
+.footer .logo{
+    color: var(--white-text-color);
+    text-decoration: none;
+}
+.portfolio-nav{
+    text-decoration: none;
+    color: var(--main-text-color);
+    background-color: var(--portfolio-nav);
+    
+}
+.portfolio-nav:hover, .portfolio-nav:focus{
+    color: var(--white-text-color);
+    background-color: var(--accent);
+}
+.portfolio-description{
+    color: var(--second-text-color);
+}
