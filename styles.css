@@ -3,6 +3,10 @@
 second-text-color: #FFFFFF
 accent: #2196F3  */
 
+/* Fonts
+main-font: Roboto, 400, 500, 700, 900
+logo-font: Raleway 700 */
+
 :root{
 --main-text-color: #212121;
 --second-text-color: #757575; 
@@ -18,13 +22,27 @@ accent: #2196F3  */
 body{
     background-color: var(--bg-main);
     color: var(--main-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+address{
+    font-style: normal;
 }
 
 .header .logo{
     color: var(--main-text-color);
-    text-decoration: none;
-
 }
+
+.header .logo,
+.footer .logo{
+        text-decoration: none;
+            font-family: Raleway, sans-serif;
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 1.19;
+}
+ 
+
 .logo-web{
     color: var(--accent);
 }
@@ -32,6 +50,7 @@ body{
 .header-nav{
     text-decoration: none;
     color: var(--main-text-color);
+
 }
 .header-nav:hover, 
 .header-nav:focus{
@@ -50,17 +69,74 @@ body{
 .header-tel:focus{
     color: var(--accent);
 }
+
+.header-nav,
+.header-mail,
+.header-tel{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.02em;
+}
+
 .hero{
     background-color: var(--bg-accent);
     color: var(--white-text-color);
 }
+
+.hero h1{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
 .hero-button{
     background-color: var(--accent);
     color: var(--white-text-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
 }
 .advantages, .team-duty{
     color: var(--second-text-color);
 }
+
+.section-advantages h3{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+
+}
+.advantages{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.section-advantages h2,
+.section-work h2,
+.section-team h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+}
+
+.section-team h3{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.section-team p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+}
+
 .footer{
     background-color: var(--bg-accent);
 }
@@ -73,6 +149,14 @@ body{
     color: var(--footer-text-accent);
     text-decoration: none;
 }
+
+.footer li{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
 .footer .logo{
     color: var(--white-text-color);
     text-decoration: none;
@@ -81,6 +165,7 @@ body{
     text-decoration: none;
     color: var(--main-text-color);
     background-color: var(--portfolio-nav);
+    font-family: inherit;
     
 }
 .portfolio-nav:hover, .portfolio-nav:focus{
@@ -89,4 +174,16 @@ body{
 }
 .portfolio-description{
     color: var(--second-text-color);
+}
+.portfolio-examples h2{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-examples p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.9;
 }
